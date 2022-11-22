@@ -1,13 +1,14 @@
-const fs = require('fs');
+const fs = require('fs'); //firstsystem
 
 const feelingWords = ['hate', 'despise', 'dislike', 'would rather die than', 'like', 'love', 'appreciate', 'would love']
-const verbs = fs.readFileSync('verbs.txt','utf-8').split("\n")
-const nouns = fs.readFileSync('nouns.txt', 'utf-8').split("\n")
+const verbs = fs.readFileSync('verbs.txt','utf-8').split("\n") //list of all english verbs
+const nouns = fs.readFileSync('nouns.txt', 'utf-8').split("\n") //list of all english nouns
+
+const name = 'Youssif';
 
 main();
 
 function main (){
-    const name = 'Youssif'
 
     const f_index = RandomIndex(feelingWords);
     const v_index = RandomIndex(verbs);
